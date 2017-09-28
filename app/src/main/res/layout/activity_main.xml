@@ -12,6 +12,32 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Ask Watson"
-        tools:layout_editor_absoluteX="136dp"
+        tools:layout_editor_absoluteX="147dp"
+        tools:layout_editor_absoluteY="238dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reservar"
+        tools:layout_editor_absoluteX="147dp"
+        tools:layout_editor_absoluteY="39dp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Consulta Reservación"
+        tools:layout_editor_absoluteX="107dp"
+        tools:layout_editor_absoluteY="126dp" />
+
+    <Button
+        android:id="@+id/button4"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="info"
+        tools:layout_editor_absoluteX="152dp"
         tools:layout_editor_absoluteY="503dp" />
+
 </android.support.constraint.ConstraintLayout>

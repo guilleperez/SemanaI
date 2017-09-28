@@ -8,14 +8,15 @@ import android.widget.Button;
 
 public class Main extends AppCompatActivity {
 
-    private Button boton;
+    private Button watson, registrar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     
-        boton = (Button) findViewById(R.id.button);
-        boton.setOnClickListener(new View.OnClickListener() {
+        watson = (Button) findViewById(R.id.button);
+        registrar = (Button) findViewById(R.id.button2);
+        watson.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent inti = new Intent(getBaseContext(), MainActivity.class);

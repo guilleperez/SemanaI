@@ -14,4 +14,5 @@
     <string name="error_message_bluemix_connection">Please verify your connection to the internet.\n\nSee the README for further assistance.</string>
     <string name="error_title_invalid_workspace">Invalid Workspace ID</string>
     <string name="error_message_invalid_workspace">Please verify your workspace ID in \"values/credentials\" and rebuild the application.</string>
+    <string name="title_activity_registrar">Registrar</string>
 </resources>
