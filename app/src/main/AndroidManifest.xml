@@ -6,13 +6,13 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/ic_questionandanswer"
-        android:label="@string/app_name"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Demo Hotel"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
             android:name=".Main"
-            android:label="@string/app_name"
+            android:label="Demo Hotel"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
