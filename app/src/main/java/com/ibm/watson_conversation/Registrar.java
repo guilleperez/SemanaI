@@ -23,18 +23,22 @@ public class Registrar extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registrar);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+       /* Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);*/
+       //getSupportActionBar().hide();
         getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_PAN);
 
         /*Datos de la lista, tipos de cuarto*/
         parentHeaderInformation = new ArrayList<String>();
-        parentHeaderInformation.add("Cuartos");
+        parentHeaderInformation.add("Tipo de cuarto");
+        parentHeaderInformation.add("Tipo de Pago");
+
         HashMap<String, List<String>> allChildItems = returnGroupedChildItems();
         expandableListView = (ExpandableListView)findViewById(R.id.list1);
         ExpandableListViewAdapter expandableListViewAdapter = new ExpandableListViewAdapter(getApplicationContext(), parentHeaderInformation, allChildItems);
         expandableListView.setAdapter(expandableListViewAdapter);
 
+/*
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -43,7 +47,7 @@ public class Registrar extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
-
+*/
     }
 
     private HashMap<String, List<String>> returnGroupedChildItems(){
@@ -53,19 +57,20 @@ public class Registrar extends AppCompatActivity {
         cuartos.add("Individual");
         cuartos.add("Doble");
         cuartos.add("Familiar");
-        /*List<String> houses = new ArrayList<String>();
-        houses.add("Duplex");
-        houses.add("Twin Duplex");
-        houses.add("Bungalow");
-        houses.add("Two Storey");
+        List<String> pago = new ArrayList<String>();
+        pago.add("Tarjeta");
+        pago.add("Efectivo");
+        pago.add("Cheque");
+        /*pago.add("Two Storey");
         List<String> footballClubs = new ArrayList<String>();
         footballClubs.add("Liverpool");
         footballClubs.add("Arsenal");
         footballClubs.add("Stoke City");
         footballClubs.add("West Ham");
-        childContent.put(parentHeaderInformation.get(1), cuartos);
-        childContent.put(parentHeaderInformation.get(2), cuartos);*/
+        ;*/
         childContent.put(parentHeaderInformation.get(0), cuartos);
+        childContent.put(parentHeaderInformation.get(1), pago);
+        //childContent.put(parentHeaderInformation.get(2), cuartos);
 
 
         return childContent;

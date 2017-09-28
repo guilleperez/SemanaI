@@ -15,4 +15,5 @@
     <string name="error_title_invalid_workspace">Invalid Workspace ID</string>
     <string name="error_message_invalid_workspace">Please verify your workspace ID in \"values/credentials\" and rebuild the application.</string>
     <string name="title_activity_registrar">Registrar</string>
+    <string name="title_activity_reconocimiento_facial">Reconocimiento_facial</string>
 </resources>
