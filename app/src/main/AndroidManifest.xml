@@ -24,7 +24,9 @@
         <activity
             android:name=".Registrar"
             android:label="@string/title_activity_registrar"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Reservation" />
+        <activity android:name=".ResNumber"></activity>
     </application>
 
 </manifest>
