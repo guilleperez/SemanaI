@@ -9,6 +9,7 @@ import android.view.View;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.WindowManager;
 import android.widget.ExpandableListView;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -24,12 +25,11 @@ public class Registrar extends AppCompatActivity {
         setContentView(R.layout.activity_registrar);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_PAN);
 
         /*Datos de la lista, tipos de cuarto*/
         parentHeaderInformation = new ArrayList<String>();
-        parentHeaderInformation.add("Cars");
-        parentHeaderInformation.add("Houses");
-        parentHeaderInformation.add("Football Clubs");
+        parentHeaderInformation.add("Cuartos");
         HashMap<String, List<String>> allChildItems = returnGroupedChildItems();
         expandableListView = (ExpandableListView)findViewById(R.id.list1);
         ExpandableListViewAdapter expandableListViewAdapter = new ExpandableListViewAdapter(getApplicationContext(), parentHeaderInformation, allChildItems);
@@ -49,12 +49,11 @@ public class Registrar extends AppCompatActivity {
     private HashMap<String, List<String>> returnGroupedChildItems(){
 
         HashMap<String, List<String>> childContent = new HashMap<String, List<String>>();
-        List<String> cars = new ArrayList<String>();
-        cars.add("Volvo");
-        cars.add("BMW");
-        cars.add("Toyota");
-        cars.add("Nissan");
-        List<String> houses = new ArrayList<String>();
+        List<String> cuartos = new ArrayList<String>();
+        cuartos.add("Individual");
+        cuartos.add("Doble");
+        cuartos.add("Familiar");
+        /*List<String> houses = new ArrayList<String>();
         houses.add("Duplex");
         houses.add("Twin Duplex");
         houses.add("Bungalow");
@@ -64,9 +63,10 @@ public class Registrar extends AppCompatActivity {
         footballClubs.add("Arsenal");
         footballClubs.add("Stoke City");
         footballClubs.add("West Ham");
-        childContent.put(parentHeaderInformation.get(0), cars);
-        childContent.put(parentHeaderInformation.get(1), cars);
-        childContent.put(parentHeaderInformation.get(2), cars);
+        childContent.put(parentHeaderInformation.get(1), cuartos);
+        childContent.put(parentHeaderInformation.get(2), cuartos);*/
+        childContent.put(parentHeaderInformation.get(0), cuartos);
+
 
         return childContent;
     }
