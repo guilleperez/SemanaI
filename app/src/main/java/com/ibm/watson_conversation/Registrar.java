@@ -30,8 +30,7 @@ public class Registrar extends AppCompatActivity {
 
         /*Datos de la lista, tipos de cuarto*/
         parentHeaderInformation = new ArrayList<String>();
-        parentHeaderInformation.add("Tipo de cuarto");
-        parentHeaderInformation.add("Tipo de Pago");
+        parentHeaderInformation.add("Room Type");
 
         HashMap<String, List<String>> allChildItems = returnGroupedChildItems();
         expandableListView = (ExpandableListView)findViewById(R.id.list1);
@@ -57,10 +56,7 @@ public class Registrar extends AppCompatActivity {
         cuartos.add("Individual");
         cuartos.add("Doble");
         cuartos.add("Familiar");
-        List<String> pago = new ArrayList<String>();
-        pago.add("Tarjeta");
-        pago.add("Efectivo");
-        pago.add("Cheque");
+
         /*pago.add("Two Storey");
         List<String> footballClubs = new ArrayList<String>();
         footballClubs.add("Liverpool");
@@ -69,7 +65,7 @@ public class Registrar extends AppCompatActivity {
         footballClubs.add("West Ham");
         ;*/
         childContent.put(parentHeaderInformation.get(0), cuartos);
-        childContent.put(parentHeaderInformation.get(1), pago);
+
         //childContent.put(parentHeaderInformation.get(2), cuartos);
 
 
