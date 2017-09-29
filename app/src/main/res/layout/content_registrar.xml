@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/ScrollView01"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -10,25 +11,7 @@
         android:id="@+id/RelativeLayout01"
         android:layout_width="fill_parent"
         android:layout_height="match_parent"
-        android:padding="50sp">>
-
-        >
-
-        <Button
-            android:id="@+id/button7"
-            android:layout_width="250dp"
-            android:layout_height="60dp"
-            android:layout_marginTop="44dp"
-            android:layout_weight="0.01"
-            android:background="@drawable/watson_dialog"
-            android:fontFamily="sans-serif-smallcaps"
-            android:text="Register"
-            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-            android:textColor="@android:color/background_light"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            android:layout_centerHorizontal="true"
-            android:layout_below="@+id/list1" />
+        android:padding="50sp">
 
         <EditText
             android:id="@+id/editText2"
@@ -38,8 +21,8 @@
             android:layout_below="@+id/editText"
             android:layout_marginTop="12dp"
             android:ems="10"
-            android:inputType="textEmailAddress"
-            android:text="E-Mail" />
+            android:hint="E-Mail"
+            android:inputType="textEmailAddress" />
 
         <EditText
             android:id="@+id/editText3"
@@ -49,8 +32,8 @@
             android:layout_below="@+id/editText4"
             android:layout_marginTop="11dp"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Region" />
+            android:hint="Region"
+            android:inputType="textPersonName" />
 
         <EditText
             android:id="@+id/editText"
@@ -59,8 +42,8 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="13dp"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Name" />
+            android:hint="Name"
+            android:inputType="textPersonName" />
 
         <EditText
             android:id="@+id/editText4"
@@ -70,17 +53,10 @@
             android:layout_below="@+id/editText2"
             android:layout_marginTop="11dp"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Hotel" />
+            android:hint="Hotel"
+            android:inputType="textPersonName" />
 
-        <ExpandableListView
-            android:id="@+id/list1"
-            android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:layout_below="@+id/editText3"
-            android:layout_centerHorizontal="true"
-            android:textIsSelectable="true"
-            android:layout_marginTop="13dp" />
+
 
         <TextView
             android:layout_width="wrap_content"
@@ -91,7 +67,57 @@
             android:textIsSelectable="true"
             android:focusable="true"
             android:longClickable="true"
-            android:layout_alignStart="@+id/list1"/>
+          />
+
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_weight="0.01"
+            android:background="@drawable/watson_dialog"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="Register"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginTop="89dp"
+            android:layout_below="@+id/checkBox"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:id="@+id/editText5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/checkBox"
+            android:layout_below="@+id/checkBox"
+            android:layout_marginTop="22dp"
+            android:ems="10"
+            android:hint="Credit Card Number"
+            android:inputType="textPersonName" />
+
+
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Credit Card"
+            android:layout_alignBaseline="@+id/checkBox2"
+            android:layout_alignBottom="@+id/checkBox2"
+            android:layout_alignEnd="@+id/editText3"
+            android:layout_marginEnd="11dp" />
+
+        <CheckBox
+            android:id="@+id/checkBox2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cash"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/editText3"
+            android:layout_alignStart="@+id/editText3" />
 
     </RelativeLayout>
 </ScrollView>

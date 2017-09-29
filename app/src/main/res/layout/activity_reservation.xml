@@ -22,22 +22,6 @@
         android:layout_below="@+id/textView2"
         android:layout_centerHorizontal="true" />
 
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="250dp"
-        android:layout_height="60dp"
-        android:layout_weight="0.01"
-        android:background="@drawable/watson_dialog"
-        android:fontFamily="sans-serif-smallcaps"
-        android:text="Without reservation"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        android:textColor="@android:color/background_light"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:layout_marginTop="82dp"
-        android:layout_below="@+id/button4"
-        android:layout_alignStart="@+id/button4" />
-
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"

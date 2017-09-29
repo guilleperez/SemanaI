@@ -13,6 +13,7 @@ public class QR extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_qr);
+        getSupportActionBar().hide();
 
         ImageButton qr = (ImageButton) findViewById(R.id.qr);
         Button btn = (Button) findViewById(R.id.button10);
