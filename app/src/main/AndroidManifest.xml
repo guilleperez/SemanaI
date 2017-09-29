@@ -2,8 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.ibm.watson_conversation">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -29,10 +29,12 @@
         <activity
             android:name=".Reconocimiento_facial"
             android:label="@string/title_activity_reconocimiento_facial"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
             android:theme="@style/AppTheme.NoActionBar" />
+        android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".Reservation" />
-        <activity android:name=".ResNumber"></activity>
+        <activity android:name=".ResNumber" />
+        <activity android:name=".CreateQrCode" />
+        <activity android:name=".QR"></activity>
     </application>
 
 </manifest>

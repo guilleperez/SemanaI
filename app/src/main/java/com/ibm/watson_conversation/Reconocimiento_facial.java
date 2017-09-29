@@ -17,31 +17,20 @@ import java.io.File;
 
 public class Reconocimiento_facial extends AppCompatActivity {
 
-    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_reconocimiento_facial);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+        setContentView(R.layout.activity_qr);
 
-        ImageButton camara = (ImageButton)findViewById(R.id.camera);
-        camara.setOnClickListener(new View.OnClickListener() {
+        ImageButton qr = (ImageButton) findViewById(R.id.qr);
+        Button btn = (Button) findViewById(R.id.button10);
+
+        btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent cameraIntent = new Intent(
-                        android.provider.MediaStore.ACTION_IMAGE_CAPTURE);
-                //Creamos una carpeta en la memeria del terminal
-                File imagesFolder = new File(
-                        Environment.getExternalStorageDirectory(), "AndroidFacil");
-                imagesFolder.mkdirs();
-                //añadimos el nombre de la imagen
-                File image = new File(imagesFolder, "foto.jpg");
-                Uri uriSavedImage = Uri.fromFile(image);
-                //Le decimos al Intent que queremos grabar la imagen
-                cameraIntent.putExtra(MediaStore.EXTRA_OUTPUT, uriSavedImage);
-                //Lanzamos la aplicacion de la camara con retorno (forResult)
-                startActivityForResult(cameraIntent, 1);
-            }});
+                Intent inti = new Intent(getBaseContext(), Main.class);
+                startActivity(inti);
+            }
+        });
     }
-
 }
+

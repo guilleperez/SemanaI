@@ -22,7 +22,7 @@
             android:layout_weight="0.01"
             android:background="@drawable/watson_dialog"
             android:fontFamily="sans-serif-smallcaps"
-            android:text="Registrar"
+            android:text="Register"
             android:textAppearance="@style/TextAppearance.AppCompat.Body2"
             android:textColor="@android:color/background_light"
             android:textSize="24sp"
@@ -79,8 +79,19 @@
             android:layout_height="150dp"
             android:layout_below="@+id/editText3"
             android:layout_centerHorizontal="true"
+            android:textIsSelectable="true"
             android:layout_marginTop="13dp" />
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/pwTextView"
+            android:enabled="true"
+            android:textIsSelectable="true"
+            android:focusable="true"
+            android:longClickable="true"
+            android:layout_alignStart="@+id/list1"/>
 
     </RelativeLayout>
 </ScrollView>

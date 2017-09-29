@@ -19,7 +19,7 @@ import static com.ibm.watson_conversation.R.id.parent;
 
 public class Main extends AppCompatActivity {
 
-    private Button watson, res;
+    private Button watson, res, key;
     private DrawerLayout drawerLayout;
     private RelativeLayout mainLayout;
     private ListView menuLateral;
@@ -83,6 +83,7 @@ public class Main extends AppCompatActivity {
 
         watson = (Button) findViewById(R.id.button);
         res = (Button) findViewById(R.id.button2);
+        key = (Button) findViewById(R.id.button3);
         watson.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -95,6 +96,14 @@ public class Main extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent inti = new Intent(getBaseContext(), Reservation.class);
+                startActivity(inti);
+            }
+        });
+
+        key.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent inti = new Intent(getBaseContext(), Reconocimiento_facial.class);
                 startActivity(inti);
             }
         });

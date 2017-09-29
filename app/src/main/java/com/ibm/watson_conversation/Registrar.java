@@ -1,11 +1,13 @@
 package com.ibm.watson_conversation;
 
+import android.content.ClipboardManager;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.ContextMenu;
 import android.view.View;
 import android.os.Bundle;
 import android.view.Menu;
@@ -13,9 +15,13 @@ import android.view.MenuItem;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ExpandableListView;
+import android.widget.TextView;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+
+import static com.ibm.watson_conversation.R.id.parent;
 
 public class Registrar extends AppCompatActivity {
 
@@ -48,7 +54,6 @@ public class Registrar extends AppCompatActivity {
         expandableListView = (ExpandableListView)findViewById(R.id.list1);
         ExpandableListViewAdapter expandableListViewAdapter = new ExpandableListViewAdapter(getApplicationContext(), parentHeaderInformation, allChildItems);
         expandableListView.setAdapter(expandableListViewAdapter);
-
 /*
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -114,5 +119,6 @@ public class Registrar extends AppCompatActivity {
         }*/
         return super.onOptionsItemSelected(item);
     }
+
 
 }
