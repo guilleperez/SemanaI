@@ -18,8 +18,8 @@
         android:textColor="@android:color/background_light"
         android:textSize="24sp"
         android:textStyle="bold"
-        android:layout_marginTop="119dp"
-        android:layout_alignParentTop="true"
+        android:layout_marginTop="72dp"
+        android:layout_below="@+id/textView2"
         android:layout_centerHorizontal="true" />
 
     <Button
@@ -34,8 +34,21 @@
         android:textColor="@android:color/background_light"
         android:textSize="24sp"
         android:textStyle="bold"
-        android:layout_marginTop="85dp"
+        android:layout_marginTop="82dp"
         android:layout_below="@+id/button4"
         android:layout_alignStart="@+id/button4" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="46dp"
+        android:fontFamily="cursive"
+        android:text="Trawit"
+        android:textColor="@android:color/holo_blue_light"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>
