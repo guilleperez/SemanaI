@@ -7,4 +7,7 @@
     android:windowSoftInputMode="adjustNothing"
     tools:context="com.ibm.watson_conversation.Registrar">
 
+
+    <include layout="@layout/content_registrar" />
+
 </android.support.design.widget.CoordinatorLayout>
