@@ -20,7 +20,7 @@ public class ResNumber extends AppCompatActivity {
         resNumber.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent inti = new Intent(getBaseContext(), Reconocimiento_facial.class);
+                Intent inti = new Intent(getBaseContext(), QR.class);
                 startActivity(inti);
             }
         });

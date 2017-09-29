@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/ScrollView01"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -12,7 +11,6 @@
         android:layout_width="fill_parent"
         android:layout_height="match_parent"
         android:padding="50sp">
-
         <EditText
             android:id="@+id/editText2"
             android:layout_width="wrap_content"
@@ -33,7 +31,7 @@
             android:layout_marginTop="11dp"
             android:ems="10"
             android:hint="Region"
-            android:inputType="textPersonName" />
+            android:inputType="text|textPersonName" />
 
         <EditText
             android:id="@+id/editText"
@@ -54,7 +52,7 @@
             android:layout_marginTop="11dp"
             android:ems="10"
             android:hint="Hotel"
-            android:inputType="textPersonName" />
+            android:inputType="text" />
 
 
 
@@ -69,6 +67,14 @@
             android:longClickable="true"
           />
 
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:text="Credit Card"
+            android:layout_below="@+id/editText3"
+            android:layout_alignStart="@+id/editText5" />
 
         <Button
             android:id="@+id/button7"
@@ -82,42 +88,29 @@
             android:textColor="@android:color/background_light"
             android:textSize="24sp"
             android:textStyle="bold"
-            android:layout_marginTop="89dp"
-            android:layout_below="@+id/checkBox"
+            android:layout_marginTop="49dp"
+            android:layout_below="@+id/editText5"
             android:layout_centerHorizontal="true" />
 
         <EditText
             android:id="@+id/editText5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignEnd="@+id/checkBox"
-            android:layout_below="@+id/checkBox"
-            android:layout_marginTop="22dp"
+            android:layout_alignStart="@+id/editText3"
+            android:layout_below="@+id/radioButton"
+            android:layout_marginTop="23dp"
             android:ems="10"
             android:hint="Credit Card Number"
-            android:inputType="textPersonName" />
+            android:inputType="text" />
 
-
-
-        <CheckBox
-            android:id="@+id/checkBox"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Credit Card"
-            android:layout_alignBaseline="@+id/checkBox2"
-            android:layout_alignBottom="@+id/checkBox2"
-            android:layout_alignEnd="@+id/editText3"
-            android:layout_marginEnd="11dp" />
-
-        <CheckBox
-            android:id="@+id/checkBox2"
+        <RadioButton
+            android:id="@+id/radioButton2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Cash"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="20dp"
-            android:layout_below="@+id/editText3"
-            android:layout_alignStart="@+id/editText3" />
+            android:layout_alignTop="@+id/radioButton"
+            android:layout_alignEnd="@+id/editText5"
+            android:layout_marginEnd="13dp" />
 
     </RelativeLayout>
 </ScrollView>
