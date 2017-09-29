@@ -16,12 +16,19 @@
 
         <Button
             android:id="@+id/button7"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Register"
-            android:layout_below="@+id/list1"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="44dp"
+            android:layout_weight="0.01"
+            android:background="@drawable/watson_dialog"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="Registrar"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp"
+            android:textStyle="bold"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="22dp" />
+            android:layout_below="@+id/list1" />
 
         <EditText
             android:id="@+id/editText2"

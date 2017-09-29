@@ -1,5 +1,6 @@
 package com.ibm.watson_conversation;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -10,6 +11,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.WindowManager;
+import android.widget.Button;
 import android.widget.ExpandableListView;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -17,6 +19,7 @@ import java.util.List;
 
 public class Registrar extends AppCompatActivity {
 
+    private Button reg;
     private ExpandableListView expandableListView;
     private List<String>parentHeaderInformation;
     @Override
@@ -27,6 +30,15 @@ public class Registrar extends AppCompatActivity {
         setSupportActionBar(toolbar);*/
        //getSupportActionBar().hide();
         getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_PAN);
+
+        reg = (Button) findViewById(R.id.button7);
+        reg.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent inti = new Intent(getBaseContext(), Reconocimiento_facial.class);
+                startActivity(inti);
+            }
+        });
 
         /*Datos de la lista, tipos de cuarto*/
         parentHeaderInformation = new ArrayList<String>();

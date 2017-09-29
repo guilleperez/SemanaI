@@ -14,12 +14,13 @@ public class ResNumber extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_res_number);
+        getSupportActionBar().hide();
 
         resNumber = (Button) findViewById(R.id.button6);
         resNumber.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent inti = new Intent(getBaseContext(), Main.class);
+                Intent inti = new Intent(getBaseContext(), Reconocimiento_facial.class);
                 startActivity(inti);
             }
         });
